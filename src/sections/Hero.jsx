@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center min-h-screen">
           <h1 className="font-medium text-4xl">Diogo Pires</h1>
           <h2 className="font-bold text-[64px]">Desenvolvedor Web</h2>
-          <p className="font-medium text-[20px] text-gray-500 text-center">
+          <p className="font-medium text-[20px] text-font-light text-center">
             Desenvolvedor Front End e graduando em Ciência da
             <br /> Computação pela IBMR.
           </p>
