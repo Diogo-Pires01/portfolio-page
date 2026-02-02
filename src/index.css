@@ -18,4 +18,12 @@
   .nav-link-active {
     @apply bg-primary font-semibold;
   }
+
+  .btn-primary {
+    @apply bg-primary font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:bg-yellow-500 cursor-pointer;
+  }
+
+  .btn-secundary {
+    @apply border-2 border-gray-200 font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:border-gray-300 cursor-pointer;
+  }
 }

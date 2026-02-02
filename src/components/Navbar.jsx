@@ -29,7 +29,7 @@ const Navbar = () => {
   const linkClass = (id) => (active === id ? "nav-link-active" : "");
 
   return (
-    <nav className="fixed top-10 left-1/2 -translate-x-1/2 z-50 rounded-full shadow-[0_8px_8px_rgba(0,0,0,0.1)]">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 rounded-full bg-white shadow-[0_8px_8px_rgba(0,0,0,0.1)]">
       <div className="flex gap-6 mx-5 my-4">
         <a href="#inicio" className={`nav-link ${linkClass("inicio")}`}>
           Início
