@@ -9,3 +9,13 @@
   --color-font-dark: #000000;
   --color-font-light: #7e7e7e;
 }
+
+@layer components {
+  .nav-link {
+    @apply w-45 h-12 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100;
+  }
+
+  .nav-link-active {
+    @apply bg-primary font-semibold;
+  }
+}
