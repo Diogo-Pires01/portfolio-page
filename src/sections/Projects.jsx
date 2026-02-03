@@ -1,34 +1,37 @@
-import teste from "../assets/images/projects/teste.png";
+import cryptoInvest from "../assets/images/projects/cryptoInvest.png";
+import geradorCode from "../assets/images/projects/geradorcode.png";
+import todoList from "../assets/images/projects/todolist.png";
+import cloneApple from "../assets/images/projects/cloneapple.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      url: teste,
-      alt: "Projeto X",
-      name: "Proj name",
-      link: "https://github.com/Diogo-Pires01",
+      url: cryptoInvest,
+      alt: "Crypto Invest",
+      name: "Crypto Invest",
+      link: "https://github.com/Diogo-Pires01/crypto-backend",
     },
     {
       id: 2,
-      url: teste,
-      alt: "Projeto Y",
-      name: "Proj name",
-      link: "https://github.com/Diogo-Pires01",
+      url: geradorCode,
+      alt: "Gerador de QRCode",
+      name: "Gerador de QRCode",
+      link: "https://diogo-pires01.github.io/gerador-code/",
     },
     {
       id: 3,
-      url: teste,
-      alt: "Projeto X",
-      name: "Proj name",
-      link: "https://github.com/Diogo-Pires01",
+      url: todoList,
+      alt: "Todo List",
+      name: "Todo List",
+      link: "https://diogo-pires01.github.io/todo-list/",
     },
     {
       id: 4,
-      url: teste,
-      alt: "Projeto Y",
-      name: "Proj name",
-      link: "https://github.com/Diogo-Pires01",
+      url: cloneApple,
+      alt: "Clone Apple",
+      name: "Clone Apple",
+      link: "https://diogo-pires01.github.io/clone-apple/",
     },
   ];
 
