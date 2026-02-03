@@ -1,5 +1,5 @@
 import cryptoInvest from "../assets/images/projects/cryptoInvest.png";
-import geradorCode from "../assets/images/projects/geradorcode.png";
+import geradorCode from "../assets/images/projects/geradorCode.png";
 import todoList from "../assets/images/projects/todolist.png";
 import cloneApple from "../assets/images/projects/cloneapple.png";
 
