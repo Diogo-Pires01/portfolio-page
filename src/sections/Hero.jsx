@@ -5,9 +5,9 @@ const Hero = () => {
     <section id="inicio">
       <div className="min-h-screen bg-[linear-gradient(180deg,#999999_15%,#FFFFFF_85%)]">
         <div className="flex flex-col items-center justify-center min-h-screen">
-          <h1 className="font-medium text-4xl">Diogo Pires</h1>
-          <h2 className="font-bold text-[64px]">Desenvolvedor Web</h2>
-          <p className="font-medium text-[20px] text-font-light text-center">
+          <h1 className="font-medium text-lg md:text-4xl">Diogo Pires</h1>
+          <h2 className="font-bold text-3xl md:text-[64px]">Desenvolvedor Web</h2>
+          <p className="font-medium text-xs md:text-xl text-font-light text-center">
             Desenvolvedor Front End e graduando em Ciência da
             <br /> Computação pela IBMR.
           </p>

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [active, setActive] = useState("inicio");
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -30,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 rounded-full bg-white shadow-[0_8px_8px_rgba(0,0,0,0.1)]">
-      <div className="flex gap-6 mx-5 my-4">
+      <div className="hidden md:flex gap-6 mx-5 my-4">
         <a href="#inicio" className={`nav-link ${linkClass("inicio")}`}>
           Início
         </a>
