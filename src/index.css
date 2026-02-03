@@ -14,6 +14,7 @@ section {
 
 @theme {
   --color-primary: #fecb03;
+  --color-secondary: #999999;
   --color-font-dark: #000000;
   --color-font-light: #7e7e7e;
 }
@@ -39,7 +40,28 @@ section {
     @apply border-2 border-primary font-semibold py-2 px-4 rounded-full transition-all duration-300 hover:border-yellow-500 cursor-pointer;
   }
 
+  .tech-container {
+    @apply pointer-events-none absolute inset-y-0 w-40 bg-linear-to-r z-10
+  }
+
   .contact-card {
     @apply w-full max-w-md bg-primary gap-3 font-semibold shadow-xl rounded-full p-6 flex items-center justify-center cursor-pointer transition-all duration-300 hover:shadow-2xl;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
   }
 }
