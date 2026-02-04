@@ -41,7 +41,7 @@ html {
   }
 
   .btn-secundary {
-    @apply border-2 border-gray-200 font-semibold py-2 md:py-4 px-4 md:px-8 rounded-full transition-all duration-300 hover:border-gray-300 cursor-pointer;
+    @apply border-2 border-gray-800 font-semibold py-2 md:py-4 px-4 md:px-8 rounded-full transition-all duration-300 hover:border-gray-200 cursor-pointer;
   }
 
   .btn-terciary {

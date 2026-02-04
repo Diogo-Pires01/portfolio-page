@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section id="inicio">
-      <div className="min-h-screen bg-[linear-gradient(180deg,#999999_15%,#FFFFFF_85%)] flex flex-col items-center justify-center">
+      <div className="min-h-screen bg-[linear-gradient(160deg,#FFD23F_0%,#fff7cc_50%,#ffffff_60%,#FFFFFF_100%)] flex flex-col items-center justify-center">
         <h1 className="font-medium text-lg md:text-4xl">Diogo Pires</h1>
         <h2 className="font-bold text-3xl md:text-[64px]">Desenvolvedor Web</h2>
         <p className="font-medium text-xs md:text-xl text-font-light text-center">
@@ -42,7 +42,7 @@ const Hero = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 duration-300 transition-all cursor-pointer"
+                  className="h-12 w-auto opacity-70 grayscale hover:opacity-100 hover:grayscale-0 duration-300 transition-all cursor-pointer"
                 />
               </div>
             ))}
@@ -55,7 +55,7 @@ const Hero = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 duration-300 transition-all cursor-pointer"
+                  className="h-12 w-auto opacity-70 grayscale hover:opacity-100 hover:grayscale-0 duration-300 transition-all cursor-pointer"
                 />
               </div>
             ))}
