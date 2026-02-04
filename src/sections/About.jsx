@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="sobre"
-      className="min-h-screen flex flex-col items-center justify-center"
+      className="min-h-screen flex flex-col items-center justify-center sm:overflow-x-hidden"
     >
       <div className="w-full max-w-5xl">
         <div className="relative flex flex-col items-center">
