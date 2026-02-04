@@ -36,8 +36,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projetos" className="min-h-screen sm:overflow-x-hidden">
-      <div className="w-full max-w-5xl mx-auto py-16">
+    <section id="projetos" className="min-h-screen overflow-x-hidden sm:overflow-x-visible">
+      <div className="w-full max-w-5xl mx-auto px-4 py-16">
         <div className="relative flex flex-col items-center mt-4">
           <h1 className="absolute -top-10 text-9xl font-bold text-black/5 whitespace-nowrap select-none">
             PROJETOS

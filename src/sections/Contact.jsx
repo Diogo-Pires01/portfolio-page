@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <section
       id="contato"
-      className="min-h-screen flex flex-col items-center justify-center sm:overflow-x-hidden"
+      className="min-h-screen flex flex-col items-center justify-center overflow-x-hidden sm:overflow-x-visible"
     >
       <div className="w-full max-w-5xl">
         <div className="relative flex flex-col items-center">
