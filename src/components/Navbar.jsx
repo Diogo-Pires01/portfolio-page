@@ -16,7 +16,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.4 },
+      { threshold: 0.5 },
     );
 
     sections.forEach((section) => observer.observe(section));
