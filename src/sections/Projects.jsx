@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <section
       id="projetos"
-      className="min-h-screen overflow-x-hidden sm:overflow-x-visible border-2"
+      className="min-h-screen overflow-x-hidden sm:overflow-x-visible"
     >
       <div className="w-full max-w-5xl mx-auto px-4 py-16">
         <div className="relative flex flex-col items-center mt-6">
