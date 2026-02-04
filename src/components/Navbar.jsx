@@ -7,6 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
+    const isMobile = window.innerWidth < 768;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -16,7 +17,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.45 },
+      { threshold: isMobile ? 0.2 : 0.45 },
     );
 
     sections.forEach((section) => observer.observe(section));
