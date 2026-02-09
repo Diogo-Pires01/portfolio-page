@@ -24,7 +24,11 @@ const Hero = () => {
           <a href="#projetos" className="btn-primary">
             Ver projetos
           </a>
-          <a href="" download className="btn-secundary">
+          <a
+            href="/docs/CV_DiogoPires_TI.pdf"
+            download
+            className="btn-secundary"
+          >
             Baixar CV <FaDownload className="ml-2 inline-block" />
           </a>
         </div>
