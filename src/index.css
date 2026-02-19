@@ -37,15 +37,15 @@ html {
   }
 
   .btn-primary {
-    @apply bg-primary font-semibold py-2 md:py-4 px-4 md:px-8 rounded-full transition-all duration-300 hover:bg-yellow-500 cursor-pointer;
+    @apply bg-primary flex items-center justify-center font-semibold py-2 md:py-4 px-4 md:px-8 rounded-full transition-all duration-300 hover:bg-yellow-500 cursor-pointer;
   }
 
   .btn-secundary {
-    @apply border-2 border-gray-800 font-semibold py-2 md:py-4 px-4 md:px-8 rounded-full transition-all duration-300 hover:border-gray-200 cursor-pointer;
+    @apply border-2 border-gray-800 flex items-center justify-center font-semibold py-2 md:py-4 px-4 md:px-8 rounded-full transition-all duration-300 hover:border-gray-200 cursor-pointer;
   }
 
   .btn-terciary {
-    @apply border-2 border-primary font-semibold py-2 px-4 rounded-full transition-all duration-300 hover:border-yellow-500 cursor-pointer;
+    @apply border-2 border-primary flex items-center justify-center font-semibold py-2 px-4 rounded-full transition-all duration-300 hover:border-yellow-500 cursor-pointer;
   }
 
   .tech-container {
