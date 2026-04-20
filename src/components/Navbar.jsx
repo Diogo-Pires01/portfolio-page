@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 rounded-full bg-white shadow-[0_8px_8px_rgba(0,0,0,0.1)] hidden md:block">
+      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 rounded-full bg-surface/80 backdrop-blur-md border border-border shadow-[0_8px_32px_rgba(0,0,0,0.3)] hidden md:block">
         <div className="flex gap-6 mx-5 my-4">
           <a href="#inicio" className={`nav-link ${linkClass("inicio")}`}>
             Início
@@ -49,18 +49,16 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Btn para mobile */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-5 right-5 z-50 md:hidden bg-white p-3 rounded-full shadow-md"
+        className="fixed top-5 right-5 z-50 md:hidden bg-surface border border-border p-3 rounded-full shadow-md"
         aria-label="Abrir menu"
       >
         {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </button>
 
-      {/* Menu mobile */}
       {isOpen && (
-        <div className="fixed top-20 right-5 px-2 py-4 rounded-lg z-40 bg-white flex flex-col items-center justify-center gap-8 text-lg md:hidden">
+        <div className="fixed top-20 right-5 px-2 py-4 rounded-lg z-40 bg-surface border border-border flex flex-col items-center justify-center gap-8 text-lg md:hidden">
           <a
             href="#inicio"
             className={`nav-link ${linkClass("inicio")}`}

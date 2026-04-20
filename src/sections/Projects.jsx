@@ -42,21 +42,21 @@ const Projects = () => {
     >
       <div className="w-full max-w-5xl mx-auto px-4 py-16">
         <div className="relative flex flex-col items-center mt-6">
-          <h1 className="absolute -top-10 text-9xl font-bold text-black/5 whitespace-nowrap select-none">
+          <h1 className="absolute -top-10 text-9xl font-bold text-white/3 whitespace-nowrap select-none">
             PROJETOS
           </h1>
 
-          <h2 className="relative text-5xl font-semibold text-black">
+          <h2 className="relative text-5xl 2xl:text-6xl font-semibold text-white">
             Projetos
           </h2>
 
           <span className="w-33 h-1.25 bg-primary rounded-full" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-10 mt-12 2xl:mt-16">
           {projects.map((project) => (
             <article
               key={project.id}
-              className="group rounded-2xl overflow-hidden border bg-white"
+              className="group rounded-2xl overflow-hidden border border-border bg-surface transition-all duration-300 hover:border-primary/30"
             >
               <img
                 src={project.url}
@@ -65,7 +65,7 @@ const Projects = () => {
               />
 
               <div className="p-5 flex items-center justify-between">
-                <span className="text-lg font-medium">{project.name}</span>
+                <span className="text-lg 2xl:text-xl font-medium text-white">{project.name}</span>
 
                 <a href={project.link} target="_blank" className="btn-terciary">
                   Ver projeto

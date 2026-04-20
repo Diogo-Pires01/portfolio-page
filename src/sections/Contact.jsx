@@ -40,17 +40,17 @@ const Contact = () => {
     >
       <div className="w-full max-w-5xl">
         <div className="relative flex flex-col items-center">
-          <h1 className="absolute -top-10 text-9xl font-bold text-black/5 whitespace-nowrap select-none">
+          <h1 className="absolute -top-10 text-9xl font-bold text-white/3 whitespace-nowrap select-none">
             CONTATO
           </h1>
 
-          <h2 className="relative text-5xl font-semibold text-black">
+          <h2 className="relative text-5xl 2xl:text-6xl font-semibold text-white">
             Contato
           </h2>
 
           <span className="w-33 h-1.25 bg-primary rounded-full" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-10 mt-24 2xl:mt-32">
           {contacts.map(({ id, href, icon: Icon, value }) => (
             <a
               key={id}
@@ -59,8 +59,8 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="contact-card"
             >
-              <Icon size={24} />
-              <span>{value}</span>
+              <Icon size={24} className="text-primary" />
+              <span className="text-white">{value}</span>
             </a>
           ))}
         </div>
