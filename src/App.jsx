@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+import Preloader from "./components/Preloader";
 import Navbar from "./components/Navbar";
 
 import Hero from "./sections/Hero";
@@ -10,8 +13,11 @@ import WhatsButton from "./components/WhatsButton";
 import "./App.css";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <>
+      {loading && <Preloader onComplete={() => setLoading(false)} />}
       <Navbar />
       <Hero />
       <About />

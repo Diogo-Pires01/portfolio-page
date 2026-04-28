@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsButton = () => {
   return (
@@ -8,7 +8,7 @@ const WhatsButton = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <MessageCircle size={32} className="text-white" />
+        <FaWhatsapp size={32} className="text-white" />
       </a>
     </div>
   );
