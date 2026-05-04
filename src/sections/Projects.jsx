@@ -1,37 +1,37 @@
 import cryptoInvest from "../assets/images/projects/cryptoInvest.png";
-import geradorCode from "../assets/images/projects/geradorCode.png";
-import todoList from "../assets/images/projects/todolist.png";
-import cloneApple from "../assets/images/projects/cloneapple.png";
+import arquitetura from "../assets/images/projects/arquiteturapage.png";
+import dashboard from "../assets/images/projects/dashboardconfeitaria.png";
+import estetica from "../assets/images/projects/esteticaautomotiva.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      url: cryptoInvest,
-      alt: "Crypto Invest",
-      name: "Crypto Invest",
-      link: "https://github.com/Diogo-Pires01/crypto-backend",
+      url: estetica,
+      alt: "Estética Automotiva",
+      name: "Estética Automotiva",
+      link: "https://github.com/Diogo-Pires01/esteticaAuto-page",
     },
     {
       id: 2,
-      url: geradorCode,
-      alt: "Gerador de QRCode",
-      name: "Gerador de QRCode",
-      link: "https://diogo-pires01.github.io/gerador-code/",
+      url: arquitetura,
+      alt: "Pagina Arquitetura",
+      name: "Pagina Arquitetura",
+      link: "https://github.com/Diogo-Pires01/arquitetura-page",
     },
     {
       id: 3,
-      url: todoList,
-      alt: "Todo List",
-      name: "Todo List",
-      link: "https://diogo-pires01.github.io/todo-list/",
+      url: dashboard,
+      alt: "Dashboard Confeitaria",
+      name: "Dashboard Confeitaria",
+      link: "https://github.com/Diogo-Pires01/confeita-desk",
     },
     {
       id: 4,
-      url: cloneApple,
-      alt: "Clone Apple",
-      name: "Clone Apple",
-      link: "https://diogo-pires01.github.io/clone-apple/",
+      url: cryptoInvest,
+      alt: "Painel Criptomoedas",
+      name: "Painel Criptomoedas",
+      link: "https://github.com/Diogo-Pires01/crypto-backend",
     },
   ];
 
@@ -65,7 +65,9 @@ const Projects = () => {
               />
 
               <div className="p-5 flex items-center justify-between">
-                <span className="text-lg 2xl:text-xl font-medium text-white">{project.name}</span>
+                <span className="text-lg 2xl:text-xl font-medium text-white">
+                  {project.name}
+                </span>
 
                 <a href={project.link} target="_blank" className="btn-terciary">
                   Ver projeto
