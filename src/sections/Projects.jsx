@@ -31,7 +31,7 @@ const Projects = () => {
       url: cryptoInvest,
       alt: "Painel Criptomoedas",
       name: "Painel Criptomoedas",
-      link: "https://github.com/Diogo-Pires01/crypto-backend",
+      link: "https://github.com/Diogo-Pires01/painel-cripto",
     },
   ];
 
