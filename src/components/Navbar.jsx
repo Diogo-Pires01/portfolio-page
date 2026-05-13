@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 rounded-full bg-surface/80 backdrop-blur-md border border-border shadow-[0_8px_32px_rgba(0,0,0,0.3)] hidden md:block">
-        <div className="flex gap-6 mx-5 my-4">
+        <div className="flex gap-6 m-3">
           <a href="#inicio" className={`nav-link ${linkClass("inicio")}`}>
             Início
           </a>
