@@ -2,16 +2,307 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Diogo Pires — Desenvolvedor Front End especializado em React, JavaScript e interfaces modernas."
+    />
+    <title>Diogo Pires | Desenvolvedor Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Diogo Pires | Portfolio</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@4.0.2/lib/anime.iife.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-top"></div>
+      <div class="preloader-bottom"></div>
+      <div class="preloader-content" id="preloader-content">
+        <span class="preloader-label">Inicializando...</span>
+        <div class="preloader-bar">
+          <div class="preloader-progress" id="preloader-progress"></div>
+        </div>
+        <span class="preloader-counter" id="preloader-counter">0%</span>
+      </div>
+    </div>
+
+    <!-- Navbar Desktop -->
+    <nav class="navbar" id="navbar">
+      <a href="#inicio" class="nav-link active">Início</a>
+      <a href="#sobre" class="nav-link">Sobre mim</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <!-- Navbar Mobile -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <i class="ph ph-list"></i>
+    </button>
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="#inicio" class="nav-link active">Início</a>
+      <a href="#sobre" class="nav-link">Sobre mim</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </div>
+
+    <!-- Hero -->
+    <section id="inicio">
+      <div class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-glow-secondary"></div>
+        <div class="hero-grid"></div>
+
+        <h1 class="hero-name">Diogo Pires</h1>
+        <h2 class="hero-title">Desenvolvedor Web</h2>
+        <p class="hero-description">
+          Desenvolvedor Front End e graduando em Ciência da<br />
+          Computação pela IBMR.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
+          <a
+            href="assets/docs/CV_DiogoPires_TI.pdf"
+            download
+            class="btn-secondary"
+          >
+            Baixar CV <i class="ph ph-download-simple"></i>
+          </a>
+        </div>
+
+        <div class="marquee-container">
+          <div class="marquee-fade-left"></div>
+          <div class="marquee-fade-right"></div>
+          <div class="marquee-track">
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+            <img
+              src="https://cdn.simpleicons.org/javascript/F7DF1E"
+              alt="JavaScript"
+            />
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" />
+            <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" />
+            <img
+              src="https://cdn.simpleicons.org/express/ffffff"
+              alt="Express"
+            />
+            <img
+              src="https://cdn.simpleicons.org/nodedotjs/339933"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+              alt="Tailwind"
+            />
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+            <img
+              src="https://cdn.simpleicons.org/javascript/F7DF1E"
+              alt="JavaScript"
+            />
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" />
+            <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" />
+            <img
+              src="https://cdn.simpleicons.org/express/ffffff"
+              alt="Express"
+            />
+            <img
+              src="https://cdn.simpleicons.org/nodedotjs/339933"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+              alt="Tailwind"
+            />
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+            <img
+              src="https://cdn.simpleicons.org/javascript/F7DF1E"
+              alt="JavaScript"
+            />
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" />
+            <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" />
+            <img
+              src="https://cdn.simpleicons.org/express/ffffff"
+              alt="Express"
+            />
+            <img
+              src="https://cdn.simpleicons.org/nodedotjs/339933"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+              alt="Tailwind"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-bg-text" aria-hidden="true">SOBRE MIM</span>
+          <h2 class="section-title">Sobre mim</h2>
+          <span class="section-divider"></span>
+        </div>
+        <div class="about-content">
+          <h3 class="about-heading">
+            Eu sou <span class="text-primary">Diogo Pires</span>, desenvolvedor
+            Front End e estudante de Ciência da Computação.
+          </h3>
+          <p class="about-text">
+            Atualmente atuo como estagiário na área de desenvolvimento, onde
+            tenho contato com demandas reais, prototipação, versionamento de
+            código, metodologias ágeis e trabalho em equipe.
+          </p>
+          <p class="about-text">
+            Possuo experiência com React, JavaScript, TypeScript, HTML, CSS,
+            Tailwind CSS, Figma e Git, focando na construção de interfaces
+            modernas, responsivas e bem estruturadas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-bg-text" aria-hidden="true">PROJETOS</span>
+          <h2 class="section-title">Projetos</h2>
+          <span class="section-divider"></span>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="assets/images/esteticaautomotiva.png"
+              alt="Estética Automotiva"
+            />
+            <div class="project-info">
+              <span class="project-name">Estética Automotiva</span>
+              <a
+                href="https://github.com/Diogo-Pires01/esteticaAuto-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-tertiary"
+                >Ver projeto</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="assets/images/arquiteturapage.png"
+              alt="Pagina Arquitetura"
+            />
+            <div class="project-info">
+              <span class="project-name">Pagina Arquitetura</span>
+              <a
+                href="https://github.com/Diogo-Pires01/arquitetura-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-tertiary"
+                >Ver projeto</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="assets/images/dashboardconfeitaria.png"
+              alt="Dashboard Confeitaria"
+            />
+            <div class="project-info">
+              <span class="project-name">Dashboard Confeitaria</span>
+              <a
+                href="https://github.com/Diogo-Pires01/confeita-desk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-tertiary"
+                >Ver projeto</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="assets/images/cryptoInvest.png"
+              alt="Painel Criptomoedas"
+            />
+            <div class="project-info">
+              <span class="project-name">Painel Criptomoedas</span>
+              <a
+                href="https://github.com/Diogo-Pires01/painel-cripto"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-tertiary"
+                >Ver projeto</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-bg-text" aria-hidden="true">CONTATO</span>
+          <h2 class="section-title">Contato</h2>
+          <span class="section-divider"></span>
+        </div>
+        <div class="contact-grid">
+          <a
+            href="mailto:contatosdiogo155@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+            <i class="ph ph-envelope"></i>
+            <span>contatosdiogo155@gmail.com</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/diogo-pires-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+            <i class="ph ph-linkedin-logo"></i>
+            <span>linkedin.com/in/diogo-pires-dev/</span>
+          </a>
+          <a
+            href="https://github.com/Diogo-Pires01"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+            <i class="ph ph-github-logo"></i>
+            <span>github.com/Diogo-Pires01</span>
+          </a>
+          <a
+            href="https://www.instagram.com/dgpires.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+            <i class="ph ph-instagram-logo"></i>
+            <span>dgpires.dev</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/5521996326905?text=Olá,%20gostaria%20de%20saber%20mais!"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-btn"
+    >
+      <i class="ph ph-whatsapp-logo"></i>
+    </a>
   </body>
 </html>
